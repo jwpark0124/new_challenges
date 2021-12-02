@@ -10,8 +10,30 @@ function BaselineContexts({ BaselineContexts }) {
   const gt = '>';
   return (
     <>
-      <div className="mb-12 m-auto mt-20">
-        <div className="mb-12 text-2xl">곧 공개됩니다.</div>
+      <div className="mb-12">
+        <div className="mt-6 mx-4">
+          <Fileupload />
+          <div className="mt-6 text-base md:text-xl lg:text-2xl font-bold pb-3">
+            베이스라인
+          </div>
+          <StyledUl className="mb-2">
+            <Styledli className="list-inside  mb-1">
+              아래의 링크를 클릭하면 베이스라인 코드의 구글드라이브 주소로
+              연결됩니다.
+              <Styledli className="list-inside list-disc mb-1">
+                <a
+                  className="underline text-blue-500 "
+                  href="https://drive.google.com/file/d/1y0-MDgRpy3vQWoNRVRn5w9k_LLtES-eG/view?usp=sharing
+                  "
+                >
+                  링크
+                </a>
+              </Styledli>
+            </Styledli>
+          </StyledUl>
+        </div>
+        <hr />
+        <ContextBottom />
       </div>
     </>
   );

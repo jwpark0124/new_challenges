@@ -52,6 +52,60 @@ function OutlineContexts({ OutlineContexts }) {
               </p>
             </StyledUl>
             <hr />
+            <p className="mt-4 mb-2 text-lg font-bold">제출 방법</p>{' '}
+            <StyledUl>
+              <Styledli className="list-inside list-disc">
+                첨부파일의 형식을 참고하여 리더보드에 제출
+              </Styledli>
+
+              <Styledli className="list-inside list-disc">
+                파일명은 (팀이름).json 의 형식으로 제출
+              </Styledli>
+
+              <p className="ml-4"> - 예: teddysum.json</p>
+
+              <Styledli className="list-inside list-disc">데이터 예시</Styledli>
+              <pre>
+                {`{
+    "10_19_20211119160500116.jpg": 3,
+    "10_17_20211123094840217.jpg": 3,
+    "10_15_20211119093847212.jpg": 2,
+    "10_14_20211119093626172.jpg": 3,
+    "10_18_20211119094535128.jpg": 1,
+    "10_16_20211123094616099.jpg": 4,
+    "10_13_20211122043639108.jpg": 3,
+    "10_16_20211119094105200.jpg": 0,
+    "10_14_20211123044650224.jpg": 0,
+    "10_19_20211119160500193.jpg": 3,
+    "10_16_20211123094616022.jpg": 0,
+    "10_14_20211122043900237.jpg": 2,
+...
+}`}
+              </pre>
+              <Styledli className="list-inside list-disc">
+                각 이미지파일명을 key로, 그리고 각 문제에 대해 예측된
+                정답(integer)을 value로 갖는 JSON 파일을 제출함
+              </Styledli>
+              <Styledli className="list-inside list-disc mb-4">
+                예) 이미지파일이 10_19_20211119160500116.jpg 인 경우, label
+                3으로 예측하였음 (느타리_세균갈색무늬병)
+              </Styledli>
+            </StyledUl>
+            <hr />
+            <p className="mt-4 mb-2 text-lg font-bold">제출시 유의사항</p>{' '}
+            <StyledUl>
+              <Styledli className="list-inside list-disc">
+                참가 신청서에 기재한 “팀 이름”을 파일명으로 하여 제출하여야
+                리더보드에 반영됨
+              </Styledli>
+              <Styledli className="list-inside list-disc mb-4">
+                예를들어, 참가팀 이름이 “참가팀” 이라면, 제출 파일명은
+                “참가팀.json”으로 제출함 주어진 이미지에 대해 5개의 label 중
+                하나를 선택하는 문제로, 평가지표에는 F1 score (macro)가
+                활용됩니다.
+              </Styledli>
+            </StyledUl>
+            <hr />
             <p className="mt-4 mb-2 text-lg font-bold">주최/주관/운영</p>{' '}
             <StyledUl>
               <Styledli className="list-inside list-disc">
