@@ -7,6 +7,7 @@ import datetime
 import copy
 import constant
 import datetime
+from sklearn.metrics import f1_score
 
 # 데이터 베이스 정보 및 포트포워딩 작업
 dialogDBHost = constant.dialogDBHost
@@ -22,29 +23,22 @@ CORS(app)
 # app.config['SECRET_KEY'] = 'BCODE_Flask'
 # socketio = SocketIO(app)
 
-# 정답 데이터
-def jsonload(fname, encoding="utf-8"):    
-    
+
+def jsonload(fname, encoding="utf-8"):
     with open(fname, encoding=encoding) as f:
         j = json.load(f)
-
     return j
-gold_data = jsonload('gold_data.json')
-
+gold_data = jsonload('gold.json')
 # 문제 푸는 함수
 def calcScore(answer_list):
-
-    sum_count = len(gold_data)
-    correct_count = 0
-    for key, answer in answer_list.items():
-        if gold_data[key] == answer:
-            correct_count += 1
-
-    print(len(answer_list))
-    print(correct_count)
-    print(sum_count)
-    score = correct_count/sum_count
-
+    gold_list = []
+    pred_list = []
+    for key, label in answer_list.items():
+        gold = int(gold_data[key])
+        pred = int(label)
+        gold_list.append(gold)
+        pred_list.append(pred)
+    score = f1_score(gold_list, pred_list, average='macro')
     return score
 
 @app.route("/")
