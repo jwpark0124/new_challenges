@@ -23,8 +23,10 @@ function BaselineContexts({ BaselineContexts }) {
               <Styledli className="list-inside list-disc mb-1">
                 <a
                   className="underline text-blue-500 "
-                  href="https://drive.google.com/file/d/1y0-MDgRpy3vQWoNRVRn5w9k_LLtES-eG/view?usp=sharing
+                  href="https://colab.research.google.com/drive/1AmDiMOZkfGVOckb7pZs40PVqQTHWAw_C?usp=sharing
                   "
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
                   링크
                 </a>

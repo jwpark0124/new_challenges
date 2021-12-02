@@ -160,6 +160,8 @@ function OutlineContexts({ OutlineContexts }) {
                 <a
                   className="text-blue-900"
                   href="https://docs.google.com/forms/d/e/1FAIpQLScE5qIEeZY4wz92mYhtltx8gXO0xA_5-r0tLPZRFi5071twKw/viewform?vc=0&c=0&w=1&flr=0"
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
                   접수 링크
                 </a>
@@ -169,6 +171,8 @@ function OutlineContexts({ OutlineContexts }) {
                 <a
                   className="text-blue-900"
                   href=" https://ai-challenge.labelon.kr/"
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
                   {' '}
                   상세 대회 정보
