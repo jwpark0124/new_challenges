@@ -6,7 +6,7 @@ import ContextBottom from 'components/AppLayoutComponents/ContextBottom';
 
 function LeaderboardList() {
   const [{ data: leaderboardList, loading, error }, refetch] = useAxios({
-    url: 'http://52.79.242.208:3194/getLeaderBoardList',
+    url: 'https://52.79.242.208:3194/getLeaderBoardList',
   });
   if (loading) return <p>Loading..</p>;
   console.error('list: ', leaderboardList);

@@ -170,7 +170,7 @@ function OutlineContexts({ OutlineContexts }) {
               <Styledli className="list-inside list-disc">
                 <a
                   className="text-blue-900"
-                  href=" https://ai-challenge.labelon.kr/"
+                  href=" https://.labelon.kr/"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
