@@ -41,7 +41,7 @@ function ContextTop(props) {
       <div className="bg-white p-2 px-auto w-3/4 border-solid border-b border-opacity-20 border-gray-500">
         <div className="flex justify-center space-x-2 sm:space-x-8 md:space-x-20">
           <div className="">
-            <a href="http://ai-challenge.labelon.kr/competitions/outline">
+            <a href="http://ai-challenge.labelon.kr/">
               {isWep && (
                 <img
                   className="w-12 h-5"
