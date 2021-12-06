@@ -4,8 +4,8 @@
 import styled from 'styled-components';
 import submit from '../../../../src/assets/해커톤_참가신청서.hwp';
 import aiposter from '../../../../src/assets/AI_challenges_poster.jpg';
+import submitJsonTest from '../../../../src/assets/pred.json.zip';
 
-import submitJsonTest from '../../../../src/assets/test.json.zip';
 import ContextBottom from 'components/AppLayoutComponents/ContextBottom';
 import Fileupload from 'utils/Fileupload';
 
@@ -30,9 +30,7 @@ function OutlineContexts({ OutlineContexts }) {
           <div className="mt-2 ml-4 text-base opacity-60">
             {/* {explanation} */}
           </div>
-
           <img className="mt-6 mx-auto w-3/6 " src={aiposter} alt="" />
-
           <div className="mt-8 mx-4">
             <p className="mb-2 text-lg font-bold">대회 주제 및 목표</p>{' '}
             <StyledUl className="pb-3">
@@ -55,7 +53,10 @@ function OutlineContexts({ OutlineContexts }) {
             <p className="mt-4 mb-2 text-lg font-bold">제출 방법</p>{' '}
             <StyledUl>
               <Styledli className="list-inside list-disc">
-                첨부파일의 형식을 참고하여 리더보드에 제출
+                <a className="text-blue-700 underline" href={submitJsonTest}>
+                  첨부파일
+                </a>
+                의 형식을 참고하여 리더보드에 제출
               </Styledli>
 
               <Styledli className="list-inside list-disc">
