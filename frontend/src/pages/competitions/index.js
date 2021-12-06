@@ -17,8 +17,8 @@ function Routes({ match }) {
   // };
   return (
     <>
+      {/* <Route exact path={match.url + '/outline'} component={Outline} /> */}
       <Route exact path={match.url + '/dataset'} component={Dataset} />
-      <Route exact path={match.url + '/outline'} component={Outline} />
       <Route exact path={match.url + '/baseline'} component={Baseline} />
       <Route exact path={match.url + '/leaderboard'} component={Leaderboard} />
       {/* <Route
