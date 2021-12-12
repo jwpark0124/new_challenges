@@ -8,9 +8,9 @@ const Navbar = ({}) => {
       className="flex justify-between items-center h-16 text-black shadow-sm font-mono fixed min-w-full"
       role="navigation"
     >
-      <Link to="/competitions/outline" className=" pl-8">
+      <a className="pl-8" href="http://ai-challenge.labelon.kr/">
         AI Hackathon
-      </Link>
+      </a>
 
       <div className="pr-8 md:block hidden"></div>
     </nav>
