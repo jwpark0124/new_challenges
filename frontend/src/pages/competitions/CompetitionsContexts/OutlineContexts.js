@@ -21,6 +21,25 @@ function OutlineContexts({ OutlineContexts }) {
         <div className="mt-6 mx-4">
           <Fileupload />
           <div className="mt-6 mx-4 text-base md:text-xl lg:text-2xl font-bold">
+            {' '}
+            버섯 해커톤 웹페이지 공지사항(2021년 12월 13일)
+          </div>
+          <div className="mt-2 mx-4 text-base">
+            <p> 1. 참가접수기간 및 행사기간 연장 (~12월 20일까지)</p>
+            <p>
+              {' '}
+              2. 데이터셋 오기재 수정사항: ("2" : "느타리_세균성검은썩음병")은
+              "팽이_세균성검은썩음병" 입니다
+            </p>
+
+            <p>
+              3. 평가데이터셋 수정 후 업로드: 기존 파일에 오류가 있었습니다.
+              아래
+              <span className="ml-2 underline font-semibold">제출방법</span>의
+              "첨부파일"을 새로 다운로드 받아서 제출해주세요{' '}
+            </p>
+          </div>
+          <div className="mt-6 mx-4 text-base md:text-xl lg:text-2xl font-bold">
             2021 스마트팜 통합 데이터(버섯-병충해 이미지 분류 태스크) 인공지능
             <p className="font-normal">
               학습용 데이터 구축사업, 스마트팜 통합 데이터(버섯) 과제
