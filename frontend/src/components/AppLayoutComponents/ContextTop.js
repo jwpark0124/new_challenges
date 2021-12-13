@@ -108,7 +108,7 @@ function ContextTop(props) {
             </Link>
           </div>
           <div>
-            <a href="http://ai-challenge.labelon.kr/competitions/leaderboard">
+            <Link to="/competitions/leaderboard">
               {isWep && (
                 <img
                   className="w-25 h-5"
@@ -127,7 +127,7 @@ function ContextTop(props) {
                   alt=""
                 />
               )}
-            </a>
+            </Link>
           </div>
         </div>
       </div>
