@@ -33,6 +33,7 @@ function Fileupload() {
       })
       .catch((err) => {
         console.log(err);
+        alert('적합한 형태의 데이터가 아닙니다.');
       });
   };
 

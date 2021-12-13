@@ -13,7 +13,6 @@ import baseline2 from '../../assets/baseline2.png';
 import baseline from '../../assets/baseline.png';
 import leaderboard2 from '../../assets/leaderboard2.png';
 import leaderboard from '../../assets/leaderboard.png';
-import Fileupload from 'utils/Fileupload';
 
 function ContextTop(props) {
   const [isListHover, setIsListHover] = useState(false);
